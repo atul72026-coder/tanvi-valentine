@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine</title>
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f8c8dc;
+  font-family:Arial, sans-serif;
+}
+.card{
+  background:white;
+  padding:40px;
+  border-radius:16px;
+  text-align:center;
+  width:320px;
+}
+button{
+  padding:12px 24px;
+  border:none;
+  border-radius:20px;
+  font-size:16px;
+  cursor:pointer;
+}
+#yes{
+  background:#ff4d6d;
+  color:white;
+}
+#no{
+  background:#ddd;
+  position:absolute;
+}
+.buttons{
+  position:relative;
+  height:80px;
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+  <h2>Tanvi ❤️ will you be my Valentine?</h2>
+  <div class="buttons">
+    <button id="yes" onclick="alert('Yayyy 💖')">Yes</button>
+    <button id="no">No</button>
+  </div>
+  <small>"No" thoda shy hai 😈</small>
+</div>
+
+<script>
+const noBtn=document.getElementById("no");
+noBtn.addEventListener("mouseover",()=>{
+  noBtn.style.left=Math.random()*200+"px";
+  noBtn.style.top=Math.random()*40+"px";
+});
+</script>
+</body>
+</html>
