@@ -657,15 +657,16 @@ export default function App() {
     <>
       <style>{`
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #1a0510; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        body {
+  background: #1a0510;
+  min-height: 100vh;
+}
         .screen {
-          width: 100%;
-          max-width: 430px;
-          height: 100vh;
-          max-height: 932px;
-          position: relative;
-          overflow: hidden;
-        }
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
         @keyframes floatUp {
           0% { transform: translateY(0) scale(1); opacity: 0.7; }
           100% { transform: translateY(-110vh) scale(0.6); opacity: 0; }
